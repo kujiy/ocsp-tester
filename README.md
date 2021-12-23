@@ -1,7 +1,7 @@
 # OCSP test image
 
 ## Docker image
-https://hub.docker.com/repository/docker/kujiy/ocsp-tester/
+https://hub.docker.com/r/kujiy/ocsp-tester
 
 ## How to Use
 
