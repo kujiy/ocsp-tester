@@ -6,12 +6,12 @@ https://hub.docker.com/r/kujiy/ocsp-tester
 ## How to Use
 
 ```
-DOMAIN=example.com
 docker run --rm --env DOMAIN=example.com kujiy/ocsp-tester
 ```
 
 ## Contribution
 ```
+DOMAIN=example.com
 docker build . -t ocsp
 docker run --rm --env DOMAIN=$DOMAIN ocsp
 ```
