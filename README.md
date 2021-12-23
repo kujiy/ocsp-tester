@@ -7,6 +7,11 @@ https://hub.docker.com/repository/docker/kujiy/ocsp-tester/
 
 ```
 DOMAIN=example.com
+docker run --rm --env DOMAIN=example.com kujiy/ocsp-tester
+```
+
+## Contribution
+```
 docker build . -t ocsp
 docker run --rm --env DOMAIN=$DOMAIN ocsp
 ```
