@@ -29,8 +29,15 @@ Successfully tagged ocsp:latest
 
 
 # docker run --rm --env DOMAIN=$DOMAIN ocsp
+...
+Chain:
+depth=0: C = US, ST = California, L = Los Angeles, O = "Verizon Digital Media Services, Inc.", CN = www.example.org (untrusted)
+depth=1: C = US, O = DigiCert Inc, CN = DigiCert TLS RSA SHA256 2020 CA1 (untrusted)
+depth=2: C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert Global Root CA
+
 OCSP=http://ocsp.digicert.com
 OCSP_DOMAIN=ocsp.digicert.com
+
 OCSP Request Data:
     Version: 1 (0x0)
     Requestor List:
@@ -41,7 +48,7 @@ OCSP Request Data:
           Serial Number: 025216E1C4998E2632AA5D1DA985B43C
     Request Extensions:
         OCSP Nonce:
-            04106DCE8CC3CB0354417C5C25B328BF592E
+            0410DD58DDC3848BF3428AA249F4F0B6747D
 OCSP Response Data:
     OCSP Response Status: successful (0x0)
     Response Type: Basic OCSP Response
@@ -76,7 +83,7 @@ f3:17:ec:1a:0f:55:2b:4d:a4:be:36:cf:4b:33:1b:ed:
          5e:33:f2:82:ff:c8:fd:68:45:3d:51:2f:9b:1f:d6:2c:8e:69:
          1d:1a:5d:b9:23:81:02:00:f4:15:3a:61:7c:fa:57:a0:94:71:
          ac:4a:95:d8
-cert.pem: good
+individual-00: good
 	This Update: Dec 23 08:51:01 2021 GMT
 	Next Update: Dec 30 08:06:01 2021 GMT
 ```
