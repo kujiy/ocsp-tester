@@ -4,6 +4,7 @@
 https://hub.docker.com/r/kujiy/ocsp-tester
 
 ## How to Use
+Replase `example.com` to your domain.
 
 ```
 docker run --rm --env DOMAIN=example.com kujiy/ocsp-tester
@@ -16,7 +17,6 @@ docker build . -t ocsp
 docker run --rm --env DOMAIN=$DOMAIN ocsp
 ```
 
-$DOMAIN is what you want to verify.
 
 ## Execution example
 ```
