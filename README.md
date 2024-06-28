@@ -4,7 +4,7 @@
 https://hub.docker.com/r/kujiy/ocsp-tester
 
 ## How to Use
-Replase `example.com` to your domain.
+Replace `example.com` to your domain.
 
 ```
 docker run --rm --env DOMAIN=example.com kujiy/ocsp-tester
